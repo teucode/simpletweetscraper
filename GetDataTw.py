@@ -6,7 +6,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import datetime as dt
 import time
 
-# Generating datetime objects
+# Generating datetime
 from datetime import datetime, timedelta
 now = datetime.now()
 now = now.strftime('%Y-%m-%d')
@@ -18,7 +18,7 @@ keyword = input('Enter a topic or keyword, please:')
 
 
 
-#Open/create a file to append data to
+#Open/create a file to save data
 csvFile = open(keyword +'-scrape-' + now + '.csv', 'a', newline='', encoding='utf8')
 
 #Use csv writer
